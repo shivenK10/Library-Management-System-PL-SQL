@@ -20,15 +20,5 @@ Advantages
 •	Systematic Organization: Books are systematically categorized and organized within the system, allowing users to easily search and locate books.
 •	Efficiency and Resource Conservation: Automating library management saves significant human effort and resources, making library services more efficient for both staff and patrons.
 
-Normalization
-
-The analysis of the database schema represented in the ER diagram shows that it adheres to the first three normal forms, ensuring efficient and redundancy-free data management:
-
-1. First Normal Form (1NF): Each table contains only atomic values with consistent data types. For example, the ‘books’ table with fields like ‘book_id’, ‘name’, and ‘author’ confirms adherence to 1NF.
-
-2. Second Normal Form (2NF): All non-key attributes in each table are fully dependent on the primary key. In the ‘books’ table, attributes like ‘name’ and ‘author’ depend solely on ‘book_id’, indicating compliance with 2NF.
-
-3. Third Normal Form (3NF): There are no transitive dependencies within the tables. For instance, ‘publisher_id’ in the ‘books’ table links directly to the ‘publisher’ table and depends only on ‘book_id’, not on any non-key attribute.
-
 In conclusion, the schema effectively reaches up to the Third Normal Form (3NF), promoting data integrity and operational efficiency by ensuring that non-key attributes depend strictly on the primary keys.
 
